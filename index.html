@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form id="userf">
+        <label for="name" >Name</label>
+        <input required type="text" id="name" name="name">
+     
+        <label for="email">Email</label>
+        <input required type="email" id="email" name="email">
+     
+        <label for="password">Password</label>
+        <input required type="password" id="password" name="password">
+     
+        <label for="dob">Date of Birth</label>
+        <input required type="date" id="dob" name="dob">
+     
+        <input required type="checkbox" id="agree" name="agree">
+        <label for="agree">Accept Terms & Conditions</label>
+     
+        <button type="submit">Submit</button>
+     </form>
+     <div>
+        <h2 class="text-3xl text-center font-bold leading-tight">Input Data</h2>
+        <table id="input">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Date of Birth</th>
+                <th>Accepted Terms?</th>
+            </tr>
+        </table>
+     </div>
+     <script src="./form.js"></script>
+</body>
+</html>
+
